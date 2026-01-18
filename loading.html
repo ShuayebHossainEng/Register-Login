@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register & Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/loading.css">
+  </head>
+  <body>
+    <!-- Sign Up -->
+    <div class="container" id="signup" style="display: none;">
+      <h1 class="form-title">Register</h1>
+
+      <form method="post" action="">
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+          <label for="firstname">First Name</label>
+        </div>
+
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+          <label for="lastname">Last Name</label>
+        </div>
+
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input type="text" name="email" id="email" placeholder="Email" required>
+          <label for="email">Email</label>
+        </div>
+
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input type="password" name="password" id="password" placeholder="Password" required>
+          <label for="password">Password</label>
+        </div>
+
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input type="password" name="password" id="password" placeholder="Password" required>
+          <label for="password">Confirm Password</label>
+        </div>
+
+        <input type="submit" class="btn" value="Sign Up" name="signup">
+      </form>
+
+      <p class="or">
+        ---------- OR ----------
+      </p>
+
+      <div class="icons">
+          <i class="fab fa-google"></i>
+          <i class="fab fa-facebook"></i>
+      </div>
+
+      <div class="links">
+        <p>Already have an Account?</p>
+        <button id="signInButton">Sign In</button>
+      </div>
+    </div>
+
+
+    <!-- Sign In -->
+    <div class="container" id="signin">
+      <h1 class="form-title">Sign In</h1>
+
+      <form method="post" action="">
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input type="text" name="email" id="email" placeholder="Email" required>
+          <label for="email">Email</label>
+        </div>
+
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input type="password" name="password" id="password" placeholder="Password" required>
+          <label for="password">Password</label>
+        </div>
+
+        <p class="recover">
+          <button type="button" id="recoverIDButton">Recover Password?</button>
+        </p>
+
+        <input type="submit" class="btn" value="Sign In" name="signin">
+      </form>
+
+      <p class="or">
+        ---------- OR ----------
+      </p>
+
+      <div class="icons">
+          <i class="fab fa-google"></i>
+          <i class="fab fa-facebook"></i>
+      </div>
+
+      <div class="links">
+        <p>Don't have an Account?</p>
+        <button id="signUpButton">Sign Up</button>
+      </div>
+    </div>
+
+    <!-- Recover Password -->
+    <div class="container" id="recover" style="display: none;">
+      <h1 class="form-title">Recover Password</h1>
+
+      <form>
+        <div class="input-group">
+          <i class="fas fa-envelope"></i>
+          <input type="text" id="recoverEmail" placeholder="Email" required>
+          <label for="recoverEmail">Recovery Email</label>
+        </div>
+
+        <button type="button" class="btn" id="sendRecoveryLink">Send Recovery Link</button>
+      </form>
+
+      <div class="links">
+        <p>Remembered your password?</p>
+        <button id="backToSignIn">Back to Sign In</button>
+      </div>
+    </div>
+
+    <!-- Verify Code -->
+    <div class="container" id="verify" style="display: none;">
+      <h1 class="form-title">Verify Code</h1>
+
+      <form>
+        <div class="input-group">
+          <i class="fas fa-key"></i>
+          <input type="text" id="verificationCode" placeholder="Verification Code" required>
+          <label for="verificationCode">Verification Code</label>
+        </div>
+
+        <button type="button" class="btn" id="verifyCodeBtn">Verify Code</button>
+      </form>
+
+      <div class="links">
+        <button id="backToRecover">Back</button>
+      </div>
+    </div>
+
+    <!-- Reset Password -->
+    <div class="container" id="reset" style="display: none;">
+      <h1 class="form-title">Reset Password</h1>
+
+      <form>
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input type="password" id="newPassword" placeholder="New Password" required>
+          <label for="newPassword">New Password</label>
+        </div>
+
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input type="password" id="confirmNewPassword" placeholder="Confirm Password" required>
+          <label for="confirmNewPassword">Confirm Password</label>
+        </div>
+
+        <input type="submit" class="btn" value="Reset Password">
+      </form>
+
+      <div class="links">
+        <button id="backToSignInFromReset">Back to Sign In</button>
+      </div>
+    </div>
+
+    <script src="script/loading.js"></script>
+  </body>
+</html>

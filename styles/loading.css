@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  background: rgb(242, 242, 242);
+}
+.container{
+  width: 450px;
+  background: rgb(255, 255, 255);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0px 20px rgba(0,0,0,0.4);
+  margin: 50px auto;
+}
+form{
+  margin: 0 2rem;
+}
+.form-title{
+  text-align: center;
+  margin-bottom: 0.4rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1.3rem;
+}
+input{
+  color: inherit;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #adadad;
+  font-size: 15px;
+  padding-left: 1.5rem;
+}
+.input-group{
+  position: relative;
+  padding: 1% 0;
+}
+.input-group i{
+  position: absolute;
+  color: black;
+}
+input:focus{
+  outline: transparent;
+  background-color: transparent;
+  border-bottom: 2px solid rgb(108, 99, 255);
+}
+input::placeholder{
+  color: transparent;
+}
+label{
+  position: relative;
+  top: -1.3rem;
+  left: 1.5rem;
+  color: #757575;
+  cursor: auto;
+  transition: .5s ease all;
+}
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label{
+  top: -2.5rem;
+  font-size: 15px;
+  color: rgb(108, 99, 255);
+}
+.recover{
+  text-align: right;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.recover a{
+  text-decoration: none;
+  color: rgb(108, 99, 255);
+}
+.recover a:hover{
+  color: blue;
+  text-decoration: underline;
+}
+.btn{
+  width: 100%;
+  background: rgb(108, 99, 255);
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  transition: 0.9s;
+}
+.btn:hover{
+  background: black;
+}
+.or{
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #adadad;
+}
+.icons{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.icons i{
+  height: 40px;
+  width: 40px;
+  border: 1px solid #adadad;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  color: rgb(108, 99, 255);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.icons i:hover{
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  font-size: 1.3rem;
+}
+.links{
+  display: flex;
+  justify-content: space-around;
+  padding: 0 4rem;
+  margin-top: 0.9rem;
+  font-weight: bold;
+}
+button{
+  background: transparent;
+  border: none;
+  color: rgb(108, 99, 255);
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+button:hover{
+  text-decoration: underline;
+  color: blue;
+}
